@@ -1,0 +1,49 @@
+GIGLIONI Maellys
+
+Carnet de bord 
+
+CM d'introduction - 23/01/2024
+	Première séance de Démarche scientifique, CM d'introduction avec les attendus, le fonctionnement, etc...
+
+Séance 1 - 29/01//2024
+	Première séance de Démarche scientifique en for, prise en main de R, difficultés avec le fonctionnement, notamment au niveau de la toute première commande avec le chemin puis du fonctionnement de la lecture de données. Découverte du fonctionnement de R et de ses fonctions, prise en main de R. Nous avons commencé les premiers exercices. Avancée personnelle : des questions 1 à 9
+
+Séance 2 - 05/02/2024
+Avancée personnelle : des questions 10 à 17. Pas de difficultés rencontrées sur les questions traitées. 
+
+Séance 3 - 12/02/2024
+Avancée personnelle : des questions 18 à 24. Quelques difficultés notamment sur la droite de régression et sur l'interprétatioj pour savoir si le modèle est adapté ou non.
+(voir graphique R TD Q20) 
+
+Séance 4 - 26/02/2024 (début de python)
+Absence à cette séance.
+
+Séance - 04/03/2024 séance qui a été reportée à plus tard
+
+Séance 5 - 11/03/2024
+	Début de Python et du programme pour lire le taux de GC du chromosome et sa taille (objectif 1). Ecriture d'un algorithme pour avoir une idée plus ou moins vague de ce qu'on veut faire. Début de la programmation par la lecture du fichier. Difficulté de compréhension en autre sur le coup du fonctionnement de lecture de fichier sur python. Utilisation de input pour demander quel fichier lire. Sur le moment petit problème de variable pour le nom du fichier. 
+
+Séance 6 - 18/03/2024
+	Fin de programmation pour python et le taux de GC, calcul pour les valeurs des gallus. Difficulté de temps rencontré pour les chromosomes 1 à 3 qui ont pris énormément de temps à être traités. Autre problème rencontré au niveau du compte de A C T G et N, à cause du placement des variables qui calculaient le taux de GC et celles qui les initialisaient, le résultat du taux de gc était 0. 
+
+Séance 7 - 25/03/2024
+	Réglage de quelques soucis concernant l'écriture en fichiers des données. Le fichier était réinitialisé de ses valeurs à chaque fois que le programme tournait. Par soucis de lecture dans R, changement dans la fonction open du deuxième fichier avec "a" au lieu de "w", car cela permet d'ajouter et non de reinitialiser le fichier à chaque fois. Cela nous a donc permis d'avoir un seul fichier à lire sur R qui contient les données des chromosomes de poulet. 
+	Retour sur R pour lecture des données en graphique. Quelques difficultés de reprise en main de R, pour se souvenir des fonctions à utilisé etc... 
+
+Séance rattrapée - Séance 8 - 28/03/2024
+	Continuité de la séance précédente
+
+Séance 9 - 02/04/2024
+	Début du projet final. On étudie le principe de la fenêtre glissante et on cherche un algorithme qui correspond avant de passer au programme. Sur le programme que l'on reprend de l'objectif 1, on étudie ce qu'on doit modifier afin de pouvoir mettre la fenêtre glissante en place.
+
+Séance 10 - 08/04/2024
+	Modification du programme de base du taux de GC en ajoutant une deuxième boucle qui compte le nombre de A T G C et N. Une fois la boucle finie, ce qui vaut pour le parcourt d'une fenêtre, on calcul ensuite le taux de gc et la taille qu'on ajoute dans la page de données. Sur le coup nous avons mal placé le calcul du nombre de A T G C et N et cela nous donnait une valeur identique pour chaque fenêtre. Difficulté pour trouver la manière d'écrire le for i in range (____) et notamment que mettre et comment en parenthèse pour parcourir la séquence.
+	
+
+Séance 11 - 23/04/2024
+	Nous avons avancé dans le programme du taux de gc en le modifiant, en effet, on a changé la méthode d'affichage, c'est à dire qu'on affichait à coté du taux de GC la valeur au milieu de chaque fenêtre de lecture, ce qui n'était pas forcément cohérent. On s'est également rendu compte d'une erreur dans la boucle for de la fenêtre glissante. En effet, on avait mis les mauvaises conditions dans le if et le else if. Ce qui fait que le programme n'allait pas jusqu'au bout de la séquence.
+Nous avons tenté sur la séquence borrelia et on s'est rendu compte qu'il y avait des espaces qui empéchaient la plaine lecture de la séquence. Sur avis de la professeur, on est allé sur NCBI, on a retrouvé la séquence et on l'a retéléchargé pour en avoir une correctement rédigée. 
+
+Séance 12 (2 créneaux de 1h30) - 
+	Nous avons fini de vérifier et ajouter les valeurs de chromosomes poulet et nous les avons ajouté au rapport. Nous avons fait tourner le programme avec borrelia pour le taux de GC, en essayant une fenêtre de 2000, 2500, une de 5000 et une de 10000 pour obtenir un graph lisible sur R avec des pas respectifs de 500, 500, 1000 et 2500. Nous avons également fait le programme du biais de GC à partir du programme du taux de GC en changeant la formule de calcul, en adaptant les variables etc... Nous avons donc fait fonctionné le programme sur borrelia avec la même fenêtre et pas que pour le taux de GC, c'est à dire une fenêtre de 10000 et pas 2500. Les difficultés que j'ai rencontré ont été la gestion des données, et de trouver une taille de fenêtre et un pas qui convienne pour un graphique qui soit lisible. 
+On a également du changé les espaces sur le fichier text en alinéa pour raison de lisibilité sur R. En effet sur python, nous avons mis des alinéas qui sont devenus des espaces sur text. Nous avons modifier les données pris en abscisse et en ordonnée et nous les avons échangé (car le graphique n'était pas dans le bon sens sinon). Pour les graphiques, on a également modifier le programme pour qu'il y est de point sur le graphique pour qu'il soit plus lisible. 
